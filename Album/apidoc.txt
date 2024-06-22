@@ -1,0 +1,179 @@
+1) api for fetching token
+   
+   url: http://127.0.0.1:8000/api/token/
+
+   method: POST
+
+   body:{username,password}
+
+   authentication:Nill
+
+
+ schema:Album
+
+attributes:[
+             album_title,
+             year,
+             director,
+             language,
+             status,
+             created_date,
+             updated_date,
+             is_active
+]
+
+2)  api for listing all Album
+
+       url:http://127.0.0.1:8000/api/album/
+
+       method:GET
+
+       body:Nill
+
+       authentication:Token
+
+3) api for adding Album
+
+    url:http://127.0.0.1:8000/api/album/
+
+    method:POST
+
+    body:{album_title,
+             year,
+             director,
+             language,}
+
+   authentication:Token
+
+4) api for retreving Album details
+
+       url:http://127.0.0.1:8000/api/album/{id}/
+
+       method:GET
+
+       body:Nill
+
+       authentication:Token
+
+5) api for updating Album detail
+
+       url:http://127.0.0.1:8000/api/album/{id}/
+
+       method:PUT
+
+       body:{album_title,
+             year,
+             director,
+             language,}
+
+
+       authentication:Token
+
+
+6) api for deleting Album detail
+     
+     url:http://127.0.0.1:8000/api/album/{id}/
+
+       method:DELETE
+
+       body:Nill
+
+       authentication:Token
+
+
+
+schema: Work
+
+attributes[
+
+       track_title,
+       singers,
+       genre,
+       duration,
+       album,
+       creaded_date,
+       updated_date,
+       is_active,
+]
+
+7) api for adding a track
+
+   url:http://127.0.0.1:8000/api/album/{id}/add_track/
+
+   method: POST
+
+   body:{track_title,singers,genre,duration}
+
+   authentication:Token
+
+
+8) api for update a track
+
+   url:http://127.0.0.1:8000/api/tracks/{id}/
+
+   method: POST
+
+   body:{track_title,singers,genre,duration}
+
+   authentication:Token
+
+
+9)api for retreving a track
+
+   url:http://127.0.0.1:8000/api/tracks/{id}/
+
+   method:GET
+
+   body:Nill
+
+   authentication:Token
+
+
+10)api for deleting a track
+
+   url:http://127.0.0.1:8000/api/tracks/{id}/
+
+   method: DELETE
+
+   body:Nill
+
+   authentication:Token
+
+
+
+11) api for user registration
+
+    url:http://127.0.0.1:8000/api/register/
+
+    method:POST
+
+    body :{username',  
+            'email',
+             'password',
+             'first_name',
+             'last_name
+             }
+ 
+ authentication:Nill
+
+ 12) api for adding a review
+
+   url:http://127.0.0.1:8000/api/album/{id}/add_review/
+
+   method: POST
+
+   body:{track_title,singers,genre,duration}
+
+   authentication:Token
+
+
+
+
+
+
+
+
+
+
+   
+
